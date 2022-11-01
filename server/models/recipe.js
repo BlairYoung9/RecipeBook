@@ -9,9 +9,7 @@ const RecipeSchema = new mongoose.Schema({
         minlength: [2, "{PATH} must be 2 chars long"]
     },
     ingredient:{
-        type: [String],
-        required: [true, "{PATH} must be present"],
-        minlength: [1, "{PATH} must be 1 chars long"]
+        type: [String]
     },
     description:{
         type: String,

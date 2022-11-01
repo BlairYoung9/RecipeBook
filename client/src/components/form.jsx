@@ -44,7 +44,7 @@ const RecipeForm = (props) => {
     }
     //Create Ingredients
     const handleIngredient= (e) => {
-        setIngredient(ingredient =>  [...ingredient, ...e.target.value.split(",")])
+        setIngredient([...e.target.value.split(",")])
     }
     //Create Description
     const handleDescription= (e) => {
@@ -60,8 +60,8 @@ const RecipeForm = (props) => {
 
     return (
         <div className="App">
-            <p>Here are all the items you can buy!</p>
-            <form onSubmit={createItem}>
+            <p>Create a recipe!!</p>
+            <form onSubmit={createRecipe}>
                 <h3>{formMessage()}</h3>
                 <div>
                     <label>Title : </label>
@@ -80,10 +80,10 @@ const RecipeForm = (props) => {
                     <p>{descriptionError}</p>
                 </div>
                 
-                <input type="submit" value="Create Item" />
+                <input type="submit" value="Create Recipe" />
             </form>
         </div>
     );
 };
 
-export default ItemForm;
+export default RecipeForm;

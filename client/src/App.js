@@ -1,5 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
+import Form from './components/Form';
+import {Link, Switch, Route, BrowserRouter} from "react-router-dom"
 
 function App() {
   return (
@@ -12,18 +13,18 @@ function App() {
         <hr/>
       </div>
       <Switch>
-        <Route path = "/recipes/update/:id">
+        {/* <Route path = "/recipes/update/:id">
           <Update/>
         </Route> 
         <Route exact path = "/recipes">
-          <All/>
-        </Route>
+          <All/> */}
+        {/* </Route> */}
         <Route exact path = "/create/new">
           <Form/>
         </Route> 
-        <Route path ="/recipes/:id">
+        {/* <Route path ="/recipes/:id">
           <ViewOne/>
-        </Route> 
+        </Route>  */}
       </Switch>
     </div>
   );
