@@ -14,13 +14,13 @@ const RecipeForm = (props) => {
         e.preventDefault();
         const newRecipe = {title, ingredient, description};
         axios.post("http://localhost:8000/api/recipes", newRecipe)
-             .then(res => {
+            .then(res => {
                 console.log(res.data)
                 console.log("success")
-             })
-             .catch(err => {
+            })
+            .catch(err => {
                 console.log("error")
-             })
+            })
     };
 
     const formMessage = () => {
