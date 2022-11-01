@@ -44,14 +44,7 @@ const RecipeForm = (props) => {
     }
     //Create Ingredients
     const handleIngredient= (e) => {
-        setIngredient(e.target.value);
-        if(e.target.value.length < 1) {
-            setIngredientError("Ingredients is required.");
-        } else if(e.target.value.length < 2) {
-            setIngredientError("Ingredients must be 2 characters or longer.");
-        }else{
-            setIngredientError(""); 
-        }
+        setIngredient(ingredient =>  [...ingredient, ...e.target.value.split(",")])
     }
     //Create Description
     const handleDescription= (e) => {
