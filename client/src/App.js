@@ -5,7 +5,7 @@ import {Link, Switch, Route, BrowserRouter} from "react-router-dom"
 function App() {
   return (
     <div className="App">
-      <div class = "header">
+      <div className = "header">
         <h1>Blair's Booming Business</h1>
         <Link to="/"> Home </Link> &nbsp;&nbsp;&nbsp;&nbsp;
         <Link to="/create/new"> Create a recipe </Link> &nbsp;&nbsp;&nbsp;&nbsp;

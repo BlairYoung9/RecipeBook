@@ -69,7 +69,7 @@ const RecipeForm = (props) => {
                     <p>{titleError}</p>
                 </div>                 
                 <div>
-                    <label>Ingredient : </label>
+                    <label>Ingredient (seperate with a ,) : </label>
                     <input type="text" onChange={handleIngredient} value={ingredient} />
                     <p>{ingredientError}</p>
                 </div>
